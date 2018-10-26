@@ -297,8 +297,6 @@ kube_slave_up()
 #
 kube_reset()
 {
-    kubeadm reset
-
     rm -rf /var/lib/cni /etc/cni/ /run/flannel/subnet.env /etc/kubernetes/kubeadm.conf
 
     # 删除rpm安装包
